@@ -1,0 +1,14 @@
+USE StudentDB;
+GO
+
+IF OBJECT_ID('Students', 'U') IS NOT NULL
+DROP TABLE Students;
+GO
+
+CREATE TABLE STUDENTS (
+FullName VARCHAR(150) NOT NULL,
+RegistrationNumber VARCHAR(50) PRIMARY KEY,
+Programme VARCHAR(100) NOT NULL,
+Gender VARCHAR(10) NOT NULL
+);
+GO
